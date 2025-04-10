@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://ivey.sophielabs.net/expfront/step/index -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoPHIE</title><meta http-equiv="Imagetoolbar" content="false">
+<meta name="robots" content="all">
+<link media="screen" href="https://ivey.sophielabs.net/_media/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link type="text/css" href="./SoPHIE2_files/bootstrap.min.css" media="all" rel="stylesheet">
+<link type="text/css" href="./SoPHIE2_files/form.css" media="all" rel="stylesheet">
+<link type="text/css" href="./SoPHIE2_files/default.css" media="all" rel="stylesheet">
+<script>
+var appBase = 'https://ivey.sophielabs.net/';
+</script><script>
+var old = alert;
+alert = function() {
+  console.log(new Error().stack);
+  old.apply(window, arguments);
+};
+</script>
+</head>
+<body style="">
+
+	<div id="main">
+
+		<div id="header">
+			<div id="headline">
+			</div>
+
+			<div id="headlinks">
+									<div id="sophie_timer_warning"></div>
+					<div id="sophie_timer"></div>
+							</div>
+
+			
+		</div>
+
+		<div id="content">
+			<div id="sophie_steploading" class="hidden sophie_loading"><img src="./SoPHIE2_files/ajax-loader.gif"></div><div id="sophie_stepcontent" class=""><div id="cheader"><div class="cheadtext"><p style="text-align:center"><span style="color:#FF0000"><strong><span style="font-size:20px">Three Practical Examples</span></strong></span></p>
+<br>
+<br>
+<p style="text-align:justify">Here are three examples demonstrating how the game works. </p>
+ <p style="text-align:justify">In each round of the game, you will see a table displaying different investment level options along with their corresponding percentage of savings. It's important to note that the <font color="red"><strong>savings range</strong></font> for each investment level will vary <font color="red"><strong>from round to round</strong></font> due to market fluctuations. Some markets offer <strong>more stable</strong> savings, where the potential savings range is narrower, while others can be <strong>more volatile</strong>, with a much wider range of possible savings.Additionally, <strong>the percentage of saving</strong> which depends on investment efficiency, may also change. Your task is to decide how much to invest, with options ranging from <strong>$0 to $4,000</strong>.</p>
+ <p style="text-align:justify">Now, let's analyze the process of the game for three different senarios, one in a more stable market, another in a more volatile market, and the last one in the market with different level of efficiency(percentage saving), based on three sample tables.</p>
+<br>
+<h2 style="text-align:justify"><strong>Example 1:</strong></h2>
+
+    <p style="text-align:justify">Imagine we encounter the following table in the game, representing a more stable(narrower range of possible savings) market. </p>
+<br>
+	<table align="center" border="1" cellpadding="3" cellspacing="1" style="width: 70%; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="width:12%; text-align: center; vertical-align: middle;">Investment Level ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">% Saving</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Min Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Most Likely Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Max Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Worst Net Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Best Net Saving ($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>1600</td><td>12.00%</td><td>2280</td><td>2400</td><td>2520</td><td>680</td><td>920</td></tr>
+        <tr><td>2400</td><td>14.70%</td><td>2792</td><td>2939</td><td>3086</td><td>392</td><td>686</td></tr>
+       <tr style="background-color: #ADD8E6;"><td>3200</td><td>16.97%</td><td>3224</td><td>3394</td><td>3564</td><td>24</td><td>364</td></tr>
+        <tr><td>4000</td><td>18.97%</td><td>3605</td><td>3795</td><td>3984</td><td>-395</td><td>-16</td></tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+<p style="text-align:justify">Suppose we choose an investment level of<strong> $3,200</strong>. 
+  </p><li>According to this table, this investment corresponds to a <strong>16.97%</strong> percentage of savings on electricity costs. </li>
+<li>The <strong>potential savings</strong> will fall within a specific range<strong> ($3,224, $3,564)</strong>, with the <strong>most likely</strong> savings being<strong> $3,394</strong> .</li>
+
+<li>In the <strong>best-case</strong> scenario, our Net Saving on this investment will be<strong> $364</strong> , while in the <strong>worst-case</strong> scenario, it will be<strong> $24</strong> .</li>
+<br>
+<p style="text-align:justify">Now the game determines(randomly) the <strong>realized savings</strong> for our investment level and informs us that it is <strong> $3,300</strong>.
+  </p><p style="text-align:justify">Based on this, we can now calculate the Net Saving on our investment.</p>
+<div class="boxed" style="display: inline-block"><strong>Net Saving = Realized Saving-EE Investment </strong></div><br><br>
+<p><span style="color:#0000FF"><strong>&nbsp;$3,300 - $3,200 = $100</strong></span></p>
+<br>
+<h2 style="text-align:justify"><strong>Example 2:</strong></h2>
+
+    <p style="text-align:justify">Imagine this time we encounter the following table in the game, representing a more fluctuate (wider range of possible savings) market. </p>
+<br>
+	 <table align="center" border="1" cellpadding="3" cellspacing="1" style="width: 70%; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="width:12%; text-align: center; vertical-align: middle;">Investment Level ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">% Saving</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Min Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Most Likely Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Max Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Worst Net Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Best Net Saving ($)</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>1600</td><td>12.00%</td><td>2040</td><td>2400</td><td>2760</td><td>440</td><td>1160</td></tr>
+        <tr><td>2400</td><td>14.70%</td><td>2498</td><td>2939</td><td>3380</td><td>98</td><td>980</td></tr>
+       <tr style="background-color: #ADD8E6;"><td>3200</td><td>16.97%</td><td>2885</td><td>3394</td><td>3903</td><td>-315</td><td>703</td></tr>
+        <tr><td>4000</td><td>18.97%</td><td>3226</td><td>3795</td><td>4364</td><td>-774</td><td>364</td></tr>
+    </tbody>
+</table>
+<br>
+<br>
+<p style="text-align:justify">Again suppose we choose an investment level of<strong> $3,200</strong>. 
+ </p><li>According to this table, this investment corresponds to a <strong>16.97%</strong> percentage of savings on electricity costs. </li>
+<li>The <strong>potential savings</strong> will fall within a specific range<strong> ($2,885, $3,903)</strong>, with the <strong>most likely</strong> savings being<strong> $3,394</strong> .</li>
+
+<li>In the <strong>best-case</strong> scenario, our Net Saving on this investment will be<strong> $703</strong> , while in the <strong>worst-case</strong> scenario, we will lose<strong> $315</strong> .</li>
+<br>
+<p style="text-align:justify">Now the game determines(randomly) the <strong>realized savings</strong> for our investment level and informs us that it is <strong> $3,000</strong>.
+  </p><p style="text-align:justify">Based on this, we can now calculate the Net Saving on our investment.</p>
+<div class="boxed" style="display: inline-block"><strong>Net Saving = Realized Saving-EE Investment </strong></div><br><br>
+<p><span style="color:#0000FF"><strong>&nbsp;$3,000 - $3,200 = -$300</strong></span></p>
+<br>
+
+<h2 style="text-align:justify"><strong>Example 3:</strong></h2>
+
+    <p style="text-align:justify">Imagine we encounter the following table in the game, where the level of energy efficiency(percentage of saving) has been changed and we are in more stable(narrower range of possible savings) market. </p>
+<br>
+	<table align="center" border="1" cellpadding="3" cellspacing="1" style="width: 70%; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th style="width:12%; text-align: center; vertical-align: middle;">Investment Level ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">% Saving</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Min Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Most Likely Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Max Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Worst Net Saving ($)</th>
+            <th style="width:14%; text-align: center; vertical-align: middle;">Best Net Saving ($)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>0</td><td>0.00%</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>1600</td><td>16.00%</td><td>3040</td><td>3200</td><td>3360</td><td>1440</td><td>1760</td></tr>
+        <tr><td>2400</td><td>19.60%</td><td>3723</td><td>3919</td><td>4115</td><td>1323</td><td>1715</td></tr>
+       <tr style="background-color: #ADD8E6;"><td>3200</td><td>22.63%</td><td>4299</td><td>4525</td><td>4752</td><td>1099</td><td>1552</td></tr>
+        <tr><td>4000</td><td>25.30%</td><td>4807</td><td>5060</td><td>5313</td><td>807</td><td>1313</td></tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+<p style="text-align:justify">Suppose we choose an investment level of<strong> $3,200</strong>. 
+  </p><li>According to this table, this investment corresponds to a <strong>22.63%</strong> percentage of savings on electricity costs. </li>
+<li>The <strong>potential savings</strong> will fall within a specific range<strong> ($4,299, $4,752)</strong>, with the <strong>most likely</strong> savings being<strong> $4,525</strong> .</li>
+
+<li>In the <strong>best-case</strong> scenario, our Net Saving on this investment will be<strong> $1552</strong> , while in the <strong>worst-case</strong> scenario, it will be<strong> $1099</strong> .</li>
+<br>
+<p style="text-align:justify">Now the game determines(randomly) the <strong>realized savings</strong> for our investment level and informs us that it is <strong> $4,600</strong>.
+  </p><p style="text-align:justify">Based on this, we can now calculate the Net Saving on our investment.</p>
+<div class="boxed" style="display: inline-block"><strong>Net Saving = Realized Saving-EE Investment </strong></div><br><br>
+<p><span style="color:#0000FF"><strong>&nbsp;$4,600 - $3,200 = $1,400</strong></span></p>
+<br>
+<p style="text-align:justify">So, you can see that depending on market conditions, the range of potential savings fluctuates, directly impacting your net savings. Additionally, the efficiency of investment (percentage of savings) also has a direct effect on your net savings. This variability highlights the importance of considering both market stability and investment efficiency when making decisions. Keep this in mind as you plan your investment strategy.</p></div></div><form action="https://ivey.sophielabs.net/expfront/step/index" method="POST" id="formStepAction" name="stepaction"><input type="hidden" name="contextChecksum" value="4fb20e00bb8865c73d69131060d0bb82" id="contextChecksum"><div id="caction"><div class="cactionform"><input name="NextStep" id="NextStep" type="submit" class="btn btn-default" value="Continue ..."></div></div></form></div><div id="sophie_stepstartup" class="hidden sophie_loading"><img src="./SoPHIE2_files/ajax-loader.gif"></div><div id="sophie_stepcountdown" class="hidden sophie_stepcountdown"><div id="sophie_countdown_timer" class="hidden"></div></div><div id="sophie_stepend" class="hidden sophie_loading"><img src="./SoPHIE2_files/ajax-loader.gif"></div><form class="hidden" id="sophie_form_nextstep" action="https://ivey.sophielabs.net/expfront/step/index" method="POST"><input type="hidden" name="contextChecksum" value="4fb20e00bb8865c73d69131060d0bb82" id="contextChecksum"></form>		</div>
+
+		<div id="footer">
+					</div>
+
+	</div>
+
+<script src="./SoPHIE2_files/jquery-1.10.2.min.js.download"></script>
+<script src="./SoPHIE2_files/bootstrap.min.js.download"></script>
+<script src="./SoPHIE2_files/bootbox.min.js.download"></script>
+<script src="./SoPHIE2_files/jquery.toaster.js.download"></script>
+<script src="./SoPHIE2_files/jquery.json.min.js.download"></script>
+<script src="./SoPHIE2_files/toaster.js.download"></script>
+<script>
+var sophieSteptype = {
+};
+	
+sophieSteptype.setupInterval = function setupInterval(interval)
+{
+	window.setInterval(sophieSteptype.runUpdate, interval);
+};
+
+sophieSteptype.runUpdate = function runUpdate()
+{
+	window.sophieFrontend._ajaxInternalProcess(
+		'getContent',
+		{},
+		function (response)
+		{
+			// TODO: check if content has changed
+			//console.log(response.content);
+			$('#sophie_stepcontent #cheader').replaceWith(response.content);
+		},
+		function()
+		{	
+		}
+	);
+};
+
+//sophieSteptype.setupInterval(2000);
+
+</script>
+<script src="./SoPHIE2_files/module.js.download"></script><script>+function(){"use strict";var jsOnLoad=function(){(function(){if ("undefined" === typeof window.sophieFrontend) { window.location.reload(true); } else { window.sophieFrontend.init("4fb20e00bb8865c73d69131060d0bb82", {"_timerEnabled":false,"previewMode":false,"timerProceedByFrontend":true,"stepSyncInterval":250,"ajaxStepsyncEndpoint":"\/expfront\/ajax\/stepsync","servertimeEndpoint":"\/expfront\/servertime\/index","participantCode":"rofiwunu7038"}); }})();};if(typeof window.onload!='function'){window.onload=jsOnLoad;}else{var prevOnLoad=window.onload;window.onload=function(){if(prevOnLoad){prevOnLoad();}jsOnLoad();};}}();</script>
+</body></html>
